@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Template Tracker</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Template Tracker</string>
+    <string name="trackButtonText">Track</string>
+
+    <color name="black">#000000</color>
+
+    <string name="title_activity_color_tracker">ColorTracker</string>
+
+</resources>

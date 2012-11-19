@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Robot Functionality Test</string>
+    <string name="frontSonar">Front Sonar</string>
+    <string name="rearSonar">Rear Sonar</string>
+    
+    <string name="MoveForwardButtonText">Move Forward</string>
+    <string name="MoveForwardDistanceButtonText">Move Forward Dist</string>
+    <string name="MoveBackwardButtonText">Move Backward</string>
+    <string name="MoveBackwardDistanceButtonText">Move Backward Dist</string>
+    <string name="SpinLeftButtonText">Spin Left</string>
+    <string name="SpinLeftDistanceButtonText">Spin Left Dist</string>
+    <string name="SpinRightButtonText">Spin Right</string>
+    <string name="SpinRightDistanceButtonText">Spin Right Dist</string>
+    <string name="StopButtonText">Stop!</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>

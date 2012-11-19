@@ -1,0 +1,173 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/rearSonar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/rearSonar"
+        tools:context=".MainActivity" />
+
+    <TextView
+        android:id="@+id/frontSonar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rearSonar"
+        android:layout_alignLeft="@+id/rearSonar"
+        android:text="@string/frontSonar"
+        tools:context=".MainActivity" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/frontSonar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:height="10dip"
+        android:onClick="stop_Click"
+        android:text="@string/StopButtonText"
+        android:textSize="12dip"
+        android:width="120dip" />
+
+    <SeekBar
+        android:id="@+id/speedBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rearSonar"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:progress="20" />
+
+    <Button
+        android:id="@+id/spinRightDistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:height="10dip"
+        android:onClick="spinRightDist_Click"
+        android:text="@string/SpinRightDistanceButtonText"
+        android:textSize="12dip"
+        android:width="120dip" />
+
+    <Button
+        android:id="@+id/spinLeftButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinRightDistButton"
+        android:layout_toLeftOf="@+id/spinRightDistButton"
+        android:height="10dip"
+        android:onClick="spinLeft_Click"
+        android:text="@string/SpinLeftButtonText"
+        android:textSize="12dip"
+        android:width="120dip" />
+
+    <Button
+        android:id="@+id/moveForwardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:height="10dip"
+        android:onClick="moveForward_Click"
+        android:text="@string/MoveForwardButtonText"
+        android:textSize="12dip"
+        android:width="120dip" />
+
+    <Button
+        android:id="@+id/moveBackwardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/moveForwardButton"
+        android:height="10dip"
+        android:onClick="moveBackward_Click"
+        android:text="@string/MoveBackwardButtonText"
+        android:textSize="12dip"
+        android:width="120dip" />
+
+    <Button
+        android:id="@+id/moveBackwardDistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/moveForwardButton"
+        android:layout_toRightOf="@+id/moveForwardButton"
+        android:height="10dip"
+        android:onClick="moveBackwardDist_Click"
+        android:text="@string/MoveBackwardDistanceButtonText"
+        android:textSize="12dip"
+        android:width="120dip" />
+
+    <Button
+        android:id="@+id/spinLeftDistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/spinLeftButton"
+        android:layout_alignBottom="@+id/spinLeftButton"
+        android:layout_alignParentRight="true"
+        android:height="10dip"
+        android:onClick="spinLeftDist_Click"
+        android:text="@string/SpinLeftDistanceButtonText"
+        android:textSize="12dip"
+        android:width="120dip" />
+
+    <Button
+        android:id="@+id/spinRightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinLeftButton"
+        android:layout_toLeftOf="@+id/spinRightDistButton"
+        android:height="10dip"
+        android:onClick="spinRight_Click"
+        android:text="@string/SpinRightButtonText"
+        android:textSize="12dip"
+        android:width="120dip" />
+
+    <Button
+        android:id="@+id/moveForwardDistButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/moveForwardButton"
+        android:height="10dip"
+        android:onClick="moveForwardDist_Click"
+        android:text="@string/MoveForwardDistanceButtonText"
+        android:textSize="12dip"
+        android:width="120dip" />
+
+    <EditText
+        android:id="@+id/distanceTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/frontSonar"
+        android:layout_marginBottom="33dp"
+        android:ems="4"
+        android:inputType="number"
+        android:maxLength="3" />
+
+    <SeekBar
+        android:id="@+id/horizontalCameraBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/distanceTextBox"
+        android:layout_alignParentLeft="true"
+        android:max="180"
+        android:progress="90" />
+
+    <SeekBar
+        android:id="@+id/verticalCameraBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/speedBar"
+        android:layout_marginTop="18dp"
+        android:max="180"
+        android:progress="90" />
+
+</RelativeLayout>
